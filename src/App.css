@@ -1,0 +1,41 @@
+input{
+padding: 30px;
+border: 2px solid #cffafe;
+background-color:#cffafe;
+margin: 10px 0 10px 40px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  margin-left: 40px;
+}
+
+.flex-container > div {
+  background-color: #f0fdfa;
+  width: 95px;
+  margin: 5px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+.casio{
+  background-color: #99f6e4;
+  display: inline-block;
+  height: 600px;
+  margin-top: 50px;
+  margin-left: 35%;
+  width: 500px;
+  position: relative;
+}
+.history>h1{
+  position: absolute;
+  top: 5%;
+  left: 20px;
+}
+.historyMath{
+  position: absolute;
+  top: 15%;
+  left: 20px;
+}
+
