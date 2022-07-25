@@ -4,17 +4,18 @@ import { useState } from "react";
 /*eslint-disable no-eval */
 function App() {
   const [message,setMessage] = useState("");
-  const[total,setTotal] = useState("");
 
+  const[totals, setTotal] = useState([]);
 
   
-
+    // console.log(total)
+    
     const getValue = (value) =>{
       setMessage(message + (value));
     } 
     const TotalValue = () =>{
       setMessage(eval(message));
-      setTotal(message  + '=' + eval(message));
+      setTotal(prev => [...prev,message + ` = ` + eval(message)]) //[...prev]:bảo lưu mảng cũ
     } 
     const RemoveValue = () =>{
       setMessage(message.slice(0,-1));
@@ -56,13 +57,15 @@ function App() {
                 <div onClick={clearValue}>Clear</div>
             </div>
         </div>
-            <div className='history' value>
+            <div className='history'>
                 <h1>Lịch Sử Phép Tính</h1>
-                <ul className='historyMath'>
-                    {total}
-                </ul>
+              <ul className='historyMath'>
+                    {totals.map((total,index)=>
+                        <li key={index}>{total}</li>
+                      )}
+              </ul>
             </div>
-    </div> 
+      </div> 
     )
 }
 export default App;

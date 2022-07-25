@@ -1,7 +1,10 @@
+body{
+  background: linear-gradient(to left, #7A7FBA, #11C37C);
+}
 input{
 padding: 30px;
-border: 2px solid #cffafe;
-background-color:#cffafe;
+border: 2px solid #f5f5f4;
+background-color:#f5f5f4;
 margin: 10px 0 10px 40px;
 }
 
@@ -20,22 +23,30 @@ margin: 10px 0 10px 40px;
   font-size: 30px;
 }
 .casio{
-  background-color: #99f6e4;
+  background: linear-gradient(#e66465, #9198e5);
   display: inline-block;
   height: 600px;
   margin-top: 50px;
   margin-left: 35%;
   width: 500px;
   position: relative;
+  padding-top: 25px;
 }
 .history>h1{
   position: absolute;
   top: 5%;
   left: 20px;
+  color:#fde047;
 }
 .historyMath{
   position: absolute;
   top: 15%;
   left: 20px;
 }
+.historyMath>li{
+  font-size: 30px;
+  color: white;
+  list-style-type: none;
+}
+
 
