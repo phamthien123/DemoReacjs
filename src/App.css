@@ -29,24 +29,30 @@ margin: 10px 0 10px 40px;
   margin-top: 50px;
   margin-left: 35%;
   width: 500px;
-  position: relative;
   padding-top: 25px;
 }
+
 .history>h1{
   position: absolute;
   top: 5%;
-  left: 20px;
+  left: 5%;
   color:#fde047;
 }
-.historyMath{
+
+.historyMath {
   position: absolute;
+  left: 5%;
   top: 15%;
-  left: 20px;
-}
-.historyMath>li{
   font-size: 30px;
-  color: white;
-  list-style-type: none;
+  color:white;
 }
+.delete {
+    position: absolute;
+    top: 9%;
+    left: 26%;
+    font-size: 30px;
+    color:white;
+}
+
 
 
